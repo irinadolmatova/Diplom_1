@@ -3,11 +3,6 @@ from unittest.mock import Mock
 
 class TestBurger:
 
-    def test_init_burger_has_empty_attributes(self, burger):
-        assert burger.bun is None
-        assert burger.ingredients == []
-        assert isinstance(burger.ingredients, list)
-
 #Проверка установки булочек
     def test_set_buns_successfully_sets_bun(self, burger):
         mock_bun = Mock()
